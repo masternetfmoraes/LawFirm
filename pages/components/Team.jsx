@@ -6,7 +6,7 @@ export default function Team(){
       <Container className="bg-dark text-white" fluid>
         <Row>
           <Col sm>
-            <p className="text-warning mt-3">
+            <p className="text-warning h2  text-start mt-5">
               Team Member
             </p>
             <p className="h4 ">
