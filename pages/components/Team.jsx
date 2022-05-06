@@ -6,18 +6,23 @@ export default function Team(){
       <Container className="bg-dark text-white" fluid>
         <Row>
           <Col sm>
-            <p className="text-warning h2  text-start mt-5">
+            <p className="text-warning display-5 text-start mt-5">
               Team Member
             </p>
-            <p className="h4 ">
+            <p className="h4">
               You will introduce with our
 expert team <span className="text-warning">member</span>
             </p>
           </Col>
           <Col sm>
-            <p className="p-5">
+            <p className="mt-5">
               We believe that as a boutique practice, we are better placed to respond quickly to our clients’ needs and to provide bespoke service to our clients. We pride ourselves on not just being our clients’ lawyers.
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <hr />
           </Col>
         </Row>
         <Container className="mt-3">
