@@ -29,7 +29,7 @@ expert team <span className="text-warning">member</span>
           <Row>
           <Col sm>
             <img
-      className="d-block w-75 mx-auto rounded-circle"
+      className="d-block w-50 mx-auto rounded-circle"
       src="https://i.pinimg.com/736x/df/03/be/df03bed16a9c7ee0af654268734e877c.jpg"
       alt="First Collumn team"
     />
@@ -42,7 +42,7 @@ expert team <span className="text-warning">member</span>
           </Col>
           <Col sm>
              <img
-      className="d-block w-75 mx-auto rounded-circle"
+      className="d-block w-50 mx-auto rounded-circle"
       src="http://irtsurveys.co.uk/wp-content/uploads/2014/09/team3-300x300.jpg"
       alt="First Collumn team"
     />
@@ -55,7 +55,7 @@ expert team <span className="text-warning">member</span>
           </Col>
           <Col sm>
             <img
-      className="d-block w-75 mx-auto rounded-circle"
+      className="d-block w-50 mx-auto rounded-circle"
       src="https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f5b24404-14da-4b82-8a25-6de95d2b991b/guests/c/c936bcb7-48f3-48ec-a4e4-759b7e6bc6dd/avatar_small.jpg?v=0"
       alt="First Collumn team"
     />
