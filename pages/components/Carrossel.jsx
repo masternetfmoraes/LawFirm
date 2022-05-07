@@ -8,7 +8,7 @@ export default function Carrossel(){
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://www.dibailbonds.com/sites/default/files/parallax-backgrounds/criminal-defense-denver.jpg"
+      src="https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_05.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -19,7 +19,7 @@ export default function Carrossel(){
       <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://popugaychiki.com/wp-content/uploads/2021/10/sa-4.jpg"
+      src="https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_02.jpg"
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -30,7 +30,7 @@ export default function Carrossel(){
       <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://www.francofirm.com/wp-content/uploads/2016/08/home_lawyer2_subheader2.jpg"
+      src="https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_04.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
