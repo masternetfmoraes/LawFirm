@@ -19,6 +19,9 @@ export default function Footer(){
           <p className="h4">
             Contact info 
           </p>
+          <p className="">
+            contact@lawfirm.com
+          </p>
         </Col>
         <Col className="my-5">
           <p className="h4">Map Site</p>
