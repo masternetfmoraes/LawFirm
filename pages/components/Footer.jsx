@@ -1,12 +1,14 @@
 import { Container,Row,Col } from 'react-bootstrap';
+import styles from '../../styles/Home.module.css'
 
 export default function Footer(){
 
 
   return(
     <>
-    <Container fluid>
-      <Row>
+    <Container fluid className="bg-dark text-white 
+">
+      <Row className={styles.border_tp}>
         <Col className="my-5">
           <p className="h4">LawFirm</p>
           <p className="">
