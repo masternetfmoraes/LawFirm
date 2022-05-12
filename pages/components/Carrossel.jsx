@@ -4,6 +4,7 @@ import styles from '../../styles/Home.module.css'
 export default function Carrossel(){
   return(
     <>
+      <section id="carousel">
     <Carousel>
   <Carousel.Item>
     <img
@@ -63,6 +64,7 @@ export default function Carrossel(){
           </Col>
         </Row>
       </Container>
+        </section>
     </>
   );
 }
