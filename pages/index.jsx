@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title> Fabiano Moraes FullStack Developer , Father and Gammer</title>
+        <title> Law Firm</title>
         <
         meta name = "description"
         content = "LawFirm This site was made using Nextjs" / >
