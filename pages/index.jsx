@@ -18,7 +18,7 @@ export default function Home() {
         <
         meta name = "description"
         content = "LawFirm This site was made using Nextjs" / >
-        <meta name="ABSTRACT" content="LawFirm website,Template Made using Replit and NextJS " />
+        <meta name="ABSTRACT" content="LawFirm website,Template Made using Replit and NextJS and Bootstrap" />
         <meta name="KEYWORDS" content="LawFirm, Lawyers, Law" />
         <meta name="ROBOT" content="All" />
         <meta name="robots" content="index, follow" />
