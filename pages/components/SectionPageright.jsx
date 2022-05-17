@@ -4,16 +4,16 @@ export default function SectionPageright({title,description,image,bgcolor,textco
     <>
       <section id={section}>
       <Container fluid className={`${bgcolor} ${textcolor} my-5`}>
-        <Row>
-          <Col sm={6}>
-            <p className="display-6 text-warning">Subtitle here</p>
-            <p className="display-2 text-start">{title}</p>
+        <Row> 
+          <Col sm={6} className="px-5">
+            <p className="h5 text-secondary mb-0">Subtitle here</p>
+            <p className="display-4 text-dark mb-3 border-bottom border-secondary">{title}</p>
             
            <p className="text-start">{description} </p>
-            <Button >See More </Button>
+            <Button className="my-3">See More </Button>
         </Col>
-          <Col sm={6}>
-          <img src={image} alt="imagem" className="d-block w-100" />
+          <Col sm={6} className="px-5">
+          <img src={image} alt="imagem" className="d-block w-100 rounded" />
         </Col>
         </Row>
       </Container>
