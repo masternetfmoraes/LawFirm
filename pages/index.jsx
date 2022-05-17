@@ -35,8 +35,9 @@ export default function Home() {
       <TopNavbar />
       <Carrossel />
       <About />
-      <SectionPageright section="Other" title="Other Section" description="
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. " image="https://mbatime4u.com/wp-content/uploads/2020/01/3.jpgg" bgcolor="bg-warning" textcolor="text-success" />
+      <SectionPageright section="Other" title="Other Section" 
+        colorTitle="text-warning" description="
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. " image="https://mbatime4u.com/wp-content/uploads/2020/01/3.jpgg" bgcolor="bg-dark" textcolor="text-white" />
       <Team />
      
       
