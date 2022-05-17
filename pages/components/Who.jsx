@@ -10,7 +10,7 @@ export default function Who({titulo,description, image}){
       </Row>
         <Row>
           <Col sm={6}>
-          <img src={image} alt="imagem" className="d-block w-25" />
+          <img src={image} alt="imagem" className="d-block w-100" />
         </Col>
         <Col sm={6}>
            <p className="text-center">{description} </p>
