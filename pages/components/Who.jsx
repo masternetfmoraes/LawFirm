@@ -13,7 +13,7 @@ export default function Who({titulo,description, image}){
           <img src={image} alt="imagem" className="d-block w-100" />
         </Col>
         <Col sm={6}>
-           <p className="text-center">{description} </p>
+           <p className="text-start">{description} </p>
         </Col>
         </Row>
       </Container>
