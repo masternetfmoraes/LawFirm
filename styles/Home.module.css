@@ -66,8 +66,9 @@
   height: 500px;
 }
 .bgpoligon::before{
-  content: "a";
+  content: "";
   background-image: url("https://mbatime4u.com/wp-content/uploads/2020/01/3.jpg");
+
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
