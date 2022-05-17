@@ -7,6 +7,8 @@ import Carrossel from './components/Carrossel'
 import About from './components/About'
 import Team from './components/Team'
 import Footer from './components/Footer'
+import Who from './components/Who'
+
 
 
 
@@ -32,6 +34,8 @@ export default function Home() {
       <Carrossel />
       <About />
       <Team />
+      <Who titulo="Who we Are" description="
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. " image="https://sendiassleicester.org.uk/wp-content/uploads/2020/06/who-we-are.png" />
       <Footer />
     </>
   )

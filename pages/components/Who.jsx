@@ -1,0 +1,22 @@
+import { Container,Row,Col } from 'react-bootstrap';
+export default function Who({titulo,description, image}){
+  return(
+    <>
+      <Container>
+      <Row>
+        <Col sm={12}>
+          <p className="h1 mt-5 text-center">{titulo}</p>
+        </Col>
+      </Row>
+        <Row>
+          <Col sm={6}>
+          <img src={image} alt="imagem" className="d-block w-25" />
+        </Col>
+        <Col sm={6}>
+           <p className="text-center">{description} </p>
+        </Col>
+        </Row>
+      </Container>
+    </>
+  )
+}
