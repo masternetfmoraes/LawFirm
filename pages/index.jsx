@@ -9,6 +9,7 @@ import Team from './components/Team'
 import Footer from './components/Footer'
 
 import SectionPageleft from './components/SectionPageleft'
+import SectionPageright from './components/SectionPageright'
 
 
 
@@ -36,8 +37,10 @@ export default function Home() {
       <About />
       <Team />
      
-      <SectionPageleft title="Other Section" description="
+      <SectionPageright title="Other Section" description="
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. " image="https://mbatime4u.com/wp-content/uploads/2020/01/3.jpg" />
+      <SectionPageleft title="Who We Are" description="
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. " image="https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg" />
       <Footer />
     </>
   )
