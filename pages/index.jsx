@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 
 import SectionDiagonleft from './components/SectionDiagonleft'
 import SectionDiagonright from './components/SectionDiagonright'
+import SectionLeft from './components/SectionLeft'
 
 
 
@@ -46,15 +47,28 @@ export default function Home() {
         }
       }
       />
-      <About />
+      <SectionLeft sectionContent={
+        {
+          section:"About",
+          title:"About Us",
+          colorTitle:"text-dark",
+          subtitle:"Know more us",
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor,`,
+          image:"https://miro.medium.com/max/800/1*rF4Eig5mJBaX5zi9LGl1fw.jpeg",
+          bgcolor:"bg-white",
+          textcolor:"text-dark",
+        }
+      }
+      />
       <SectionDiagonleft sectionContent={
         {
-           section:"Who",
+          section:"Who",
           title:"Who We Are",
           subtitle:"About We",
-        colorTitle:"text-dark",
-        description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
-      image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg",
+          colorTitle:"text-dark",
+          description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
+          image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg",
+          bgcolor:"bg-success"
       
       }
       } 
