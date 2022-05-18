@@ -15,7 +15,6 @@ import Sections from './components/Sections'
 
 
 
-
 export default function Home() {
   return (
     <>
@@ -57,7 +56,9 @@ export default function Home() {
       <About />
       <SectionPageleft sectionContent={
         {
+           section:"Who",
           title:"Who We Are",
+          subtitle:"About We",
         colorTitle:"text-dark",
         description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
       image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg",
