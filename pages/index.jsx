@@ -64,8 +64,9 @@ export default function Home() {
         {
           section:"Who",
           title:"Who We Are",
-          subtitle:"About We",
           colorTitle:"text-dark",
+          borderbottom: "border-mutted",
+          subtitle:"About We",
           description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
           image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg",
           bgcolor:"bg-success"
