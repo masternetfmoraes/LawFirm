@@ -4,7 +4,7 @@ export default function SectionPageright({title,colorTitle,description,image,bgc
   return(
     <>
       <section id={section}>
-      <Container fluid className={`${bgcolor} ${textcolor} my-5`}>
+      <Container fluid className={`${bgcolor} ${textcolor}`}>
         <Row> 
           <Col sm={6} className="px-5">
             <p className="h5 text-secondary mb-0 mt-5">Subtitle here</p>

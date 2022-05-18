@@ -1,22 +1,24 @@
-import { Container,Row,Col } from 'react-bootstrap';
-export default function SectionPageleft({title,description,image}){
+import { Container,Row,Col,Button } from 'react-bootstrap';
+import styles from '../../styles/Home.module.css'
+export default function SectionPageleft({title,colorTitle,description,image,bgcolor,textcolor,section }){
   return(
     <>
-      <Container>
-      <Row>
-        <Col sm={12}>
-          <p className="h1 mt-5 text-center">{title}</p>
-        </Col>
-      </Row>
-        <Row>
-          <Col sm={6}>
+     <section id={section}>
+      <Container fluid className={`${bgcolor} ${textcolor}`}>
+        <Row> 
+           <Col sm={8} className={`${styles.bgpoligonleft} px-5 d-sm-none d-md-block d-none d-sm-block `}>
           <img src={image} alt="imagem" className="d-block w-100" />
         </Col>
-        <Col sm={6}>
-           <p className="text-start">{description} </p>
+          <Col sm={4} className="px-5">
+            <p className="h5 text-secondary mb-0 mt-5">Subtitle here</p>
+            <p className={`${colorTitle} display-4 mb-3 border-bottom border-secondary`}>{title}</p>
+            
+           <p className={`${styles.bgpoligons}`}>{description} </p>
+            <Button className="my-3">See More </Button>
         </Col>
         </Row>
       </Container>
+        </section>
     </>
   )
 }
