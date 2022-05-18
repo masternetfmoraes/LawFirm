@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 // import components
 import TopNavbar from './components/TopNavbar';
 import Carrossel from './components/Carrossel'
-import About from './components/About'
 import Team from './components/Team'
 import Footer from './components/Footer'
 
@@ -37,9 +36,13 @@ export default function Home() {
       
       <SectionDiagonright sectionContent={
         {
-          section:"Other",
-          title:"Other Section",
-          colorTitle:"text-warning",
+         section:"Who",
+          bgcolor:"bg-success",
+          title:"Who We Are",
+          colortitle:"text-warning",
+          borderbottom: "border-mutted",
+          subtitle:"About We",
+          colorsubtitle:"text-mutted",
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor,`,
           image:"https://mbatime4u.com/wp-content/uploads/2020/01/3.jpgg",
           bgcolor:"bg-dark",
@@ -49,10 +52,13 @@ export default function Home() {
       />
       <SectionLeft sectionContent={
         {
-          section:"About",
+          section:"about",
+          bgcolor:"bg-success",
           title:"About Us",
-          colorTitle:"text-dark",
-          subtitle:"Know more us",
+          colortitle:"text-dark",
+          borderbottom: "border-mutted",
+          subtitle:"About We",
+          colorsubtitle:"text-primary",
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor,`,
           image:"https://miro.medium.com/max/800/1*rF4Eig5mJBaX5zi9LGl1fw.jpeg",
           bgcolor:"bg-white",
@@ -62,21 +68,19 @@ export default function Home() {
       />
       <SectionDiagonleft sectionContent={
         {
-          section:"Who",
-          title:"Who We Are",
-          colorTitle:"text-dark",
-          borderbottom: "border-mutted",
-          subtitle:"About We",
+          section:"advantages",
+          bgcolor:"bg-success",
+          title:"Why",
+          colortitle:"text-warning",
+          borderbottom: "border-success",
+          subtitle:"Why choose us",
+          colorsubtitle:"text-warning",
           description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
-          image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg",
-          bgcolor:"bg-success"
-      
+          image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg"      
       }
       } 
       />
-      <Team />  
-       <About />
-      
+      <Team />       
       <Footer />
     </>
   )
