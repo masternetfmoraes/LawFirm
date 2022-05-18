@@ -11,8 +11,6 @@ import Footer from './components/Footer'
 import SectionPageleft from './components/SectionPageleft'
 import SectionPageright from './components/SectionPageright'
 
-import Sections from './components/Sections'
-
 
 
 export default function Home() {
@@ -35,12 +33,7 @@ export default function Home() {
         </Head>
       <TopNavbar />
       <Carrossel />
-      <Sections sectionContent={
-        {
-          title:"Titulo Aqui",
-          subtitle:"subtitulo Aqui",
-        }
-      } />
+      
       <SectionPageright sectionContent={
         {
           section:"Other",
