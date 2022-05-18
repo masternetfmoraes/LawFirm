@@ -1,6 +1,6 @@
 import { Container,Row,Col,Button } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
-export default function SectionPageleft({ sectionContent }){
+export default function SectionDiagonleft({ sectionContent }){
   return(
     <>
      <section id={sectionContent.section}>

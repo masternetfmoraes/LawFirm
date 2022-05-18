@@ -8,8 +8,8 @@ import About from './components/About'
 import Team from './components/Team'
 import Footer from './components/Footer'
 
-import SectionPageleft from './components/SectionPageleft'
-import SectionPageright from './components/SectionPageright'
+import SectionDiagonleft from './components/SectionDiagonleft'
+import SectionDiagonright from './components/SectionDiagonright'
 
 
 
@@ -34,7 +34,7 @@ export default function Home() {
       <TopNavbar />
       <Carrossel />
       
-      <SectionPageright sectionContent={
+      <SectionDiagonright sectionContent={
         {
           section:"Other",
           title:"Other Section",
@@ -47,7 +47,7 @@ export default function Home() {
       }
       />
       <About />
-      <SectionPageleft sectionContent={
+      <SectionDiagonleft sectionContent={
         {
            section:"Who",
           title:"Who We Are",
