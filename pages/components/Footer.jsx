@@ -1,16 +1,16 @@
 import { Container,Row,Col,Nav } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
 
-export default function Footer(){
+export default function Footer({sectionContent}){
 
 
   return(
     <>
-    <Container fluid className="bg-dark text-white 
-">
+    <Container fluid className={`${sectionContent.bgcolor} ${sectionContent.textcolor}`} 
+>
       <Row className="border border-5 border-start-0 border-bottom-0 border-left-0 border-end-0 border-warning">
         <Col className="my-5">
-          <p className="h4">LawFirm</p>
+          <p className="h4">{sectionContent.title}</p>
           <p className="">
           One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into.
           </p>

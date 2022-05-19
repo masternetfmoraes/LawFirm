@@ -105,7 +105,14 @@ export default function Home() {
         }
       }
       />
-      <Footer />
+      <Footer sectionContent={
+      {
+        section:"footer",
+        bgcolor:"bg-dark",
+        title:"LawFirm",
+        textcolor:"text-white",
+      }
+      } />
     </>
   )
 }
