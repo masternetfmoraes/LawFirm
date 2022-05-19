@@ -195,9 +195,7 @@
   margin-top: 35px;
 
 }
-.border_tp{
-  border-top: 5px solid rgba(255,208,0, 1);
-}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -11,7 +11,7 @@ export default function SectioRight({ sectionContent }){
             <p className={`${sectionContent.colortitle} display-4 mb-3 border-bottom ${sectionContent.borderbottom} `}>{sectionContent.title}</p>
             
            <p className={`${styles.bgpoligons}`}>{sectionContent.description} </p>
-            <Button className={`${sectionContent.btncolor}`}>{sectionContent.btntext}</Button>
+            <Button className={`${sectionContent.btncolor} `}>{sectionContent.btntext}</Button>
         </Col>
           <Col sm={6} className={` px-5 d-sm-none d-md-block d-none d-sm-block `}>
           <img src={sectionContent.image} alt="imagem" className="d-block w-100" />

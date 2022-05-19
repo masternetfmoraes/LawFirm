@@ -8,7 +8,7 @@ export default function Footer(){
     <>
     <Container fluid className="bg-dark text-white 
 ">
-      <Row className={styles.border_tp}>
+      <Row className={}>
         <Col className="my-5">
           <p className="h4">LawFirm</p>
           <p className="">
