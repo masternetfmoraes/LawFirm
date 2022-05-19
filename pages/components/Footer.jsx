@@ -8,7 +8,7 @@ export default function Footer(){
     <>
     <Container fluid className="bg-dark text-white 
 ">
-      <Row className={}>
+      <Row className="border border-5 border-start-0 border-bottom-0 border-left-0 border-end-0 border-warning">
         <Col className="my-5">
           <p className="h4">LawFirm</p>
           <p className="">
@@ -18,7 +18,7 @@ export default function Footer(){
         <Col className="my-5">
           <p className="h4">
             Contact info 
-          </p>
+          </p> 
           <Nav defaultActiveKey="/home" className="flex-column">
           <Nav.Link href="/home">Home</Nav.Link>
           <Nav.Link eventKey="link-1">contact@lawfirm.com</Nav.Link>
