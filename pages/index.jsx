@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import SectionDiagonleft from './components/SectionDiagonleft'
 import SectionDiagonright from './components/SectionDiagonright'
 import SectionLeft from './components/SectionLeft'
+import SectionRight from './components/SectionRight'
 
 
 
@@ -59,7 +60,7 @@ export default function Home() {
           borderbottom: "border-mutted",
           subtitle:"About We",
           colorsubtitle:"text-primary",
-          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor,`,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum.`,
           image:"https://miro.medium.com/max/800/1*rF4Eig5mJBaX5zi9LGl1fw.jpeg",
           bgcolor:"bg-white",
           textcolor:"text-dark",
@@ -80,7 +81,23 @@ export default function Home() {
       }
       } 
       />
-      <Team />       
+      <Team />  
+      <SectionRight sectionContent={
+        {
+          section:"about",
+          bgcolor:"bg-success",
+          title:"About Us",
+          colortitle:"text-dark",
+          borderbottom: "border-mutted",
+          subtitle:"About We",
+          colorsubtitle:"text-primary",
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum.`,
+          image:"https://miro.medium.com/max/800/1*rF4Eig5mJBaX5zi9LGl1fw.jpeg",
+          bgcolor:"bg-white",
+          textcolor:"text-dark",
+        }
+      }
+      />
       <Footer />
     </>
   )

@@ -1,6 +1,6 @@
 import { Container,Row,Col,Button } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
-export default function SectionLeft({ sectionContent }){
+export default function SectioRight({ sectionContent }){
   return(
     <>
      <section id={sectionContent.section}>
