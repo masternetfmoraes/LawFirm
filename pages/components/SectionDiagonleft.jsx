@@ -14,7 +14,7 @@ export default function SectionDiagonleft({ sectionContent }){
             <p className={`${sectionContent.colortitle} display-4 mb-3 border-bottom ${sectionContent.borderbottom} `}>{sectionContent.title}</p>
             
            <p className={`${styles.bgpoligons}`}>{sectionContent.description} </p>
-            <Button className="my-3">See More </Button>
+            <Button className={`${sectionContent.btncolor}`}>{sectionContent.btntext}</Button>
         </Col>
         </Row>
       </Container>

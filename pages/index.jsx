@@ -45,6 +45,8 @@ export default function Home() {
           subtitle:"About We",
           colorsubtitle:"text-mutted",
           textcolor:"text-white",
+          btncolor:"btn-warning",
+          btntext:"Who more",
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor,`,
           image:"https://mbatime4u.com/wp-content/uploads/2020/01/3.jpgg"
         }
@@ -60,6 +62,8 @@ export default function Home() {
           subtitle:"About We",
           colorsubtitle:"text-primary",
           textcolor:"text-dark",
+          btncolor:"btn-success",
+          btntext:"About US",
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum.`,
           image:"https://miro.medium.com/max/800/1*rF4Eig5mJBaX5zi9LGl1fw.jpeg",
           
@@ -76,6 +80,8 @@ export default function Home() {
           subtitle:"Why choose us",
           colorsubtitle:"text-warning",
           textcolor:"text-white",
+          btncolor:"btn-warning",
+          btntext:"Why more",
           description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
           image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg"      
       }
@@ -92,6 +98,8 @@ export default function Home() {
           subtitle:"Right",
           colorsubtitle:"text-primary",
           textcolor:"text-dark",
+          btncolor:"btn-warning",
+          btntext:"Right More ++",
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum.`,
           image:"https://s3-assets.eastidahonews.com/wp-content/uploads/2019/08/29184954/AdobeStock_Mediation.jpg",
         }
