@@ -6,16 +6,19 @@ export default function Footer({sectionContent}){
 
   return(
     <>
-    <Container fluid className={`${sectionContent.bgcolor} ${sectionContent.textcolor}`} 
+      <section id={sectionContent.section}> 
+    <Container fluid className={`${sectionContent.bgcolor} ${sectionContent.textcolor} pt-5 border border-5 border-start-0 border-bottom-0 border-left-0 border-end-0 border-warning `} 
 >
-      <Row className="border border-5 border-start-0 border-bottom-0 border-left-0 border-end-0 border-warning">
-        <Col className="my-5">
+      <Row className="">
+        <Col className="">
+          <nav>
           <p className="h4">{sectionContent.title}</p>
+            </nav>
           <p className="">
           One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into.
           </p>
         </Col>
-        <Col className="my-5">
+        <Col className="">
           <p className="h4">
             Contact info 
           </p> 
@@ -28,7 +31,7 @@ export default function Footer({sectionContent}){
           </Nav.Link>
         </Nav>
         </Col>
-        <Col className="my-5">
+        <Col className="">
           <p className="h4">Map Site</p>
           
           <div ><iframe width="350" height="350" src="https://maps.google.com/maps?width=350&amp;height=350&amp;hl=en&amp;q=St%20Jones%2C%2045%20New%20York+(LawFirm)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div ></div></div><br />
@@ -41,6 +44,7 @@ export default function Footer({sectionContent}){
         </Col>
       </Row>
     </Container>
+        </section>
     </>
   )
 }
