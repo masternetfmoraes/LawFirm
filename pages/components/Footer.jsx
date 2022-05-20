@@ -2,8 +2,10 @@ import { Container,Row,Col,Nav } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
 
 export default function Footer({sectionContent}){
-
-
+   /*
+     const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
+  */
+ const handleSelect = (eventKey) =>console.log(`selected ${eventKey}`);
   return(
     <>
       <section id={sectionContent.section}> 
@@ -12,23 +14,26 @@ export default function Footer({sectionContent}){
       <Row className="">
         <Col className="">
           <nav>
-          <p className="h4">{sectionContent.title}</p>
+          <p className="h4">{sectionContent.titlefooter}</p>
             </nav>
           <p className="">
-          One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into.
+            {sectionContent.subtitle}
           </p>
         </Col>
         <Col className="">
           <p className="h4">
-            Contact info 
-          </p> 
-          <Nav defaultActiveKey="/home" className="flex-column">
-          <Nav.Link href="/home">Home</Nav.Link>
-          <Nav.Link eventKey="link-1">contact@lawfirm.com</Nav.Link>
-          <Nav.Link eventKey="link-2">+1 123 456</Nav.Link>
-          <Nav.Link eventKey="disabled" disabled>
-           <i class="fa-solid fa-location-arrow"></i> New York Street 185 B
-          </Nav.Link>
+            {sectionContent.titlenavfooter} </p>
+            { sectionContent.items.length }
+            <hr />
+          <Nav variant="pills" activeKey="1" onSelect={handleSelect} defaultActiveKey="/home" className="flex-column">
+            {
+              sectionContent.items.map((showurl,label,url)=>{
+                
+                return <Nav.Link href={showurl.url}>{showurl.label}</Nav.Link>
+                
+            })
+            }
+            
         </Nav>
         </Col>
         <Col className="">

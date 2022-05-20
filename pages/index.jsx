@@ -109,8 +109,30 @@ export default function Home() {
       {
         section:"footer",
         bgcolor:"bg-dark",
-        title:"LawFirm",
         textcolor:"text-white",
+        titlefooter:"LawFirm",
+        subtitle:"Lorem subtitle ipsum",
+        titlenavfooter:"Contact US",
+        urls: "https://www.google.com",
+        titleurl: "google",
+        items: [
+          {
+            label:"Fabiano Moraes",
+            url :"https://www.fabianomoraes.net"
+          },
+          {
+            label:"Google",
+            url :"https://www.google.com"
+          },
+          {
+            label: "Produtos",
+            url: "/produtos"
+          },
+          {
+            label: "contact@lawfirm.com",
+            url: "mailto:contact@lawfirm.com"
+          }
+        ],
       }
       } />
     </>
