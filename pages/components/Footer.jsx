@@ -2,9 +2,7 @@ import { Container,Row,Col,Nav } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
 
 export default function Footer({sectionContent}){
-   /*
-     const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
-  */
+
  const handleSelect = (eventKey) =>console.log(`selected ${eventKey}`);
   return(
     <>
@@ -19,6 +17,17 @@ export default function Footer({sectionContent}){
           <p className="">
             {sectionContent.subtitle}
           </p>
+          <Nav defaultActiveKey="/home" as="ul">
+          <Nav.Item as="li">
+            <Nav.Link href="/home">facebook</Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link eventKey="link-1">Twitter</Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link eventKey="link-2">Instagram</Nav.Link>
+          </Nav.Item>
+        </Nav>
         </Col>
         <Col className="">
           <p className="h4">
