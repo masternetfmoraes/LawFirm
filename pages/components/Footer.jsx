@@ -1,7 +1,7 @@
 import { Container,Row,Col,Nav } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
 
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee,faFaceRelieved } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -10,7 +10,7 @@ export default function Footer({sectionContent}){
  const handleSelect = (eventKey) =>console.log(`selected ${eventKey}`);
   return(
     <>
-      <FontAwesomeIcon icon={faCoffee} />
+      
       <section id={sectionContent.section}> 
     <Container fluid className={`${sectionContent.bgcolor} ${sectionContent.textcolor} pt-5 border border-5 border-start-0 border-bottom-0 border-left-0 border-end-0 border-warning `} 
 >
@@ -21,6 +21,7 @@ export default function Footer({sectionContent}){
             </nav>
           <p className="">
             {sectionContent.subtitle}
+            
           </p>
           <Nav defaultActiveKey="/home" as="ul">
           <Nav.Item as="li">
@@ -59,6 +60,7 @@ export default function Footer({sectionContent}){
         <Col>
           <hr />
           <p className="text-center">Fabiano Moraes 2022®</p>
+          <FontAwesomeIcon className={styles.ico} icon={faCoffee}  />
         </Col>
       </Row>
     </Container>
