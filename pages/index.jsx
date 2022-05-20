@@ -125,7 +125,7 @@ export default function Home() {
             url :"https://www.google.com"
           },
           {
-            label: "Produtos",
+            label: "Products",
             url: "/produtos"
           },
           {

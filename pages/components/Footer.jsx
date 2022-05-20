@@ -23,7 +23,6 @@ export default function Footer({sectionContent}){
         <Col className="">
           <p className="h4">
             {sectionContent.titlenavfooter} </p>
-            { sectionContent.items.length }
             <hr />
           <Nav variant="pills" activeKey="1" onSelect={handleSelect} defaultActiveKey="/home" className="flex-column">
             {
