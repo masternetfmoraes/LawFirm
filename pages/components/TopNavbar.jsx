@@ -30,7 +30,6 @@ export default function TopNavbar({ navbarContent,dropdown }){
            </>
          })
         }
-          
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>

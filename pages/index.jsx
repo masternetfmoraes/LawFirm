@@ -77,7 +77,30 @@ export default function Home() {
         ]
       }
       } />
-      <Carrossel />
+      <Carrossel carouselContent={
+      {
+        sectionid:"idCarousel",
+        carouselitem:[
+          {
+             img:"https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_05.jpg",
+        title:"Title Carousel 01",
+        subtitle:"Lorem ipsum doloret dominem rec suit apsut"
+          },
+          {
+             img:"https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_02.jpg",
+        title:"Label Carousel 02",
+        subtitle:"Lorem ipsum doloret dominem rec suit apsut"
+          },
+          {
+             img:"https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_04.jpg",
+        title:"Title Carousel 03",
+        subtitle:"Lorem ipsum doloret dominem rec suit apsut"
+          }
+        ]
+       
+      }
+      }
+        />
       
       <SectionDiagonright sectionContent={
         {

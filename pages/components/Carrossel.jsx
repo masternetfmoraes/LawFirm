@@ -1,44 +1,24 @@
 import { Carousel,Container,Row,Col } from 'react-bootstrap';
 
 import styles from '../../styles/Home.module.css'
-export default function Carrossel(){
+export default function Carrossel({carouselContent}){
   return(
     <>
-      <section id="carousel">
+      <section id={carouselContent.sectionid}>
     <Carousel>
-  <Carousel.Item>
-    <img
+      {
+        carouselContent.carouselitem.map((item,img,title,subtitle)=>{
+          return <Carousel.Item>
+              <img src={item.img}
       className="d-block w-100"
-      src="https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_05.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-      <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_02.jpg"
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-      <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://goldenblatt.bold-themes.com/main-demo/wp-content/uploads/sites/2/2019/10/hero_home_04.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
+      alt="image 01"
+    /><Carousel.Caption>
+                <h3>{item.title}</h3>
+                <p>{item.subtitle}</p>
+              </Carousel.Caption>
+        </Carousel.Item>
+        })
+      }
 </Carousel>
       <Container className="bg-dark" fluid>
         
