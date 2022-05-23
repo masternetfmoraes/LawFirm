@@ -19,7 +19,7 @@ export default function TopNavbar({ navbarContent }){
         {
           navbarContent.drop.map((items, itemlabel, itemhref)=>{
             if(items.itemhref.length >= 0){
-              return <>{items.itemhref.length}</>
+              return <></>
             }
           })
         }
