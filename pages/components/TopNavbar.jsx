@@ -1,9 +1,10 @@
 import { Navbar,Container,Nav, NavDropdown } from 'react-bootstrap';
 
-export default function TopNavbar({ navbarContent }){
+export default function TopNavbar({ navbarContent,dropdown }){
   return(
     <>
       <Navbar bg={`${navbarContent.bg}`} expand="lg" variant={`${navbarContent.variant}`}>
+        
   <Container>
     <Navbar.Brand href="#home">
       {navbarContent.brandname}
@@ -17,19 +18,19 @@ export default function TopNavbar({ navbarContent }){
           })
         }
         {
-          navbarContent.drop.map((items, itemlabel, itemhref)=>{
-            if(items.itemhref.length >= 0){
-              return <></>
-            }
-          })
+          //Insert DropDown
         }
-       
-        <NavDropdown title={`${navbarContent.dropdowntitle}`} id={`${navbarContent.iddropdown}`}>
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown title={ dropdown.title } id={ dropdown.id } >
+          {
+         dropdown.item.map((valor,itemlabel,itemhref )=>{
+           return<>
+             <NavDropdown.Item href={valor.itemhref}>
+               {valor.itemlabel}
+             </NavDropdown.Item>
+           </>
+         })
+        }
+          
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>

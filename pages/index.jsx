@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 
 import SectionDiagonleft from './components/SectionDiagonleft'
 import SectionDiagonright from './components/SectionDiagonright'
+
 import SectionLeft from './components/SectionLeft'
 import SectionRight from './components/SectionRight'
 
@@ -50,22 +51,29 @@ export default function Home() {
             label:"Who we Are",
             url :"https://www.google.com"
           },
-        ],
-        dropdowntitle:"Dropdown",
-        iddropdown:"dropdowntop",
-        drop:[
           {
-            itemlabel:"itemDrop01",
-            itemhref:"#"
-          },
+            label:"History",
+            url :"https://www.history.com"
+          }
+        ]
+        
+      }
+      } dropdown={
+        {
+        title:"Menu Drop Down",
+        id:"iddropdown",
+      item:[
           {
-            itemlabel:"itemDrop02",
-            itemhref:"#2"
-          },
-          {
-            itemlabel:"itemDrop03",
-            itemhref:"#03"
-          },
+        itemlabel:"item 01",
+        itemhref:"#01"
+      },{
+        itemlabel:"item 02",
+        itemhref:"#02",   
+      },
+        {
+        itemlabel:"item 03",
+        itemhref:"#03",   
+      }
         ]
       }
       } />
