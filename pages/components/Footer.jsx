@@ -1,7 +1,7 @@
 import { Container,Row,Col,Nav } from 'react-bootstrap';
 import styles from '../../styles/Home.module.css'
 
-import { faAddressbook } from '@fortawesome/free-solid-svg-icons'
+import { faClose } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -65,7 +65,7 @@ export default function Footer({sectionContent}){
         <Col>
           <hr />
           <p className="text-center">Fabiano Moraes 2022®</p>
-          <FontAwesomeIcon className={styles.ico} icon={faAddressbook}  />
+          <FontAwesomeIcon className={styles.ico} icon={faClose}  />
 
           
         </Col>

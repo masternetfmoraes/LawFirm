@@ -32,7 +32,30 @@ export default function Home() {
         <link rel = "icon"
         href = "/favicon.ico" />
         </Head>
-      <TopNavbar />
+      <TopNavbar navbarContent={
+      {
+        bg:"light",
+        variant:"light",
+        brandname:"LawFirm",
+        items: [
+          {
+            label:"Home",
+            url :"https://www.fabianomoraes.net"
+          },
+          {
+            label:"About",
+            url :"#about"
+          },
+          {
+            label:"Who we Are",
+            url :"https://www.google.com"
+          },
+        ],
+        drop:[
+          
+        ]
+      }
+      } />
       <Carrossel />
       
       <SectionDiagonright sectionContent={

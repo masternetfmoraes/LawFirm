@@ -1,20 +1,23 @@
 import { Navbar,Container,Nav, NavDropdown } from 'react-bootstrap';
 
-export default function TopNavbar(){
+export default function TopNavbar({ navbarContent }){
   return(
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg={`${navbarContent.bg}`} expand="lg" variant={`${navbarContent.variant}`}>
   <Container>
     <Navbar.Brand href="#home">
-    Law Firm
+      {navbarContent.brandname}
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#aboutus">About</Nav.Link>
-        <Nav.Link href="#teammember">Our Team</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+        {
+          navbarContent.items.map((items,coisa, label, url)=>{
+            return <Nav.Link href={items.url}>{ items.label }</Nav.Link>
+          })
+        }
+       
+        <NavDropdown title="Extras" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
