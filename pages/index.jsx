@@ -51,8 +51,21 @@ export default function Home() {
             url :"https://www.google.com"
           },
         ],
+        dropdowntitle:"Dropdown",
+        iddropdown:"dropdowntop",
         drop:[
-          
+          {
+            itemlabel:"itemDrop01",
+            itemhref:"#"
+          },
+          {
+            itemlabel:"itemDrop02",
+            itemhref:"#2"
+          },
+          {
+            itemlabel:"itemDrop03",
+            itemhref:"#03"
+          },
         ]
       }
       } />
