@@ -154,7 +154,33 @@ export default function Home() {
       }
       } 
       />
-      <Team />  
+      <Team teamContent={
+      {
+        sectionid:"team",
+        bgcolor:"bg-dark",
+        textcolor:"text-white",
+        title:"Team Member",
+        colortitle:"text-warning",
+        text:"We believe that as a boutique practice, we are better placed to respond quickly to our clients needs and to provide bespoke service to our clients. We pride ourselves on not just being our clients lawyers.",
+        items:[
+          {
+            img:"https://i.pinimg.com/736x/df/03/be/df03bed16a9c7ee0af654268734e877c.jpg",
+            name:"John Doe",
+            occupation:"C.E.O"
+          },
+          {
+            img:"http://irtsurveys.co.uk/wp-content/uploads/2014/09/team3-300x300.jpg",
+            name:"Petter Park",
+            occupation:"Web Design"
+          },
+          {
+            img:"https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f5b24404-14da-4b82-8a25-6de95d2b991b/guests/c/c936bcb7-48f3-48ec-a4e4-759b7e6bc6dd/avatar_small.jpg?v=0",
+            name:"Mary Jane",
+            occupation:"Lawyer"
+          }
+        ]
+      }
+      } />  
       <SectionRight sectionContent={
         {
           section:"right",
