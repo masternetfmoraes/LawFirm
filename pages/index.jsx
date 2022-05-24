@@ -204,11 +204,11 @@ export default function Home() {
         bgcolor:"bg-dark",
         textcolor:"text-white",
         titlefooter:"LawFirm",
-        subtitle:"Lorem subtitle ipsum",
-        titlenavfooter:"Contact US",
+        subtitlebrand:"Lorem subtitle ipsum",
+        titlenavcontact:"Contact US",
         urls: "https://www.google.com",
         titleurl: "google",
-        items: [
+        itemsnavcontact: [
           {
             label:"Fabiano Moraes",
             url :"https://www.fabianomoraes.net"
@@ -223,6 +223,25 @@ export default function Home() {
           },
           {
             label: "contact@lawfirm.com",
+            url: "mailto:contact@lawfirm.com"
+          }
+        ],
+        titleservices:"Our Services",
+        itemsnavservices: [
+          {
+            label:"CORPORATE & SECURITIES",
+            url :"https://www.fabianomoraes.net"
+          },
+          {
+            label:"REAL ESTATE LAW",
+            url :"https://www.google.com"
+          },
+          {
+            label: "INSURANCE LAW",
+            url: "/produtos"
+          },
+          {
+            label: "Family",
             url: "mailto:contact@lawfirm.com"
           }
         ],

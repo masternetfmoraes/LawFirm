@@ -15,12 +15,12 @@ export default function Footer({sectionContent}){
     <Container fluid className={`${sectionContent.bgcolor} ${sectionContent.textcolor} pt-5 border border-5 border-start-0 border-bottom-0 border-left-0 border-end-0 border-warning `} 
 >
       <Row className="">
-        <Col className="">
+        <Col sm className="">
           <nav>
           <p className="h4">{sectionContent.titlefooter}</p>
             </nav>
           <p className="">
-            {sectionContent.subtitle}
+            {sectionContent.subtitlebrand}
             
           </p>
           <Nav defaultActiveKey="/home" className="mt-5" as="ul">
@@ -40,13 +40,13 @@ export default function Footer({sectionContent}){
           </Nav.Item>
         </Nav>
         </Col>
-        <Col className="">
+        <Col sm className="">
           <p className="h4">
-            {sectionContent.titlenavfooter} </p>
+            {sectionContent.titlenavcontact} </p>
             <hr />
           <Nav variant="pills" activeKey="1" onSelect={handleSelect} defaultActiveKey="/home" className="flex-column">
             {
-              sectionContent.items.map((showurl,label,url)=>{
+              sectionContent.itemsnavcontact.map((showurl,label,url)=>{
                 
                 return <Nav.Link href={showurl.url}>{showurl.label}</Nav.Link>
                 
@@ -55,10 +55,23 @@ export default function Footer({sectionContent}){
             
         </Nav>
         </Col>
-        <Col className="">
-          <p className="h4">Map Site</p>
-          
-          <div ><iframe width="350" height="350" src="https://maps.google.com/maps?width=350&amp;height=350&amp;hl=en&amp;q=St%20Jones%2C%2045%20New%20York+(LawFirm)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div ></div></div><br />
+        <Col sm className="">
+          <p className="h4">
+            {
+              sectionContent.titleservices
+            }
+          </p>
+          <hr />
+           <Nav variant="pills" activeKey="1" onSelect={handleSelect} defaultActiveKey="/home" className="flex-column">
+            {
+              sectionContent.itemsnavservices.map((showurl,label,url)=>{
+                
+                return <Nav.Link href={showurl.url}>{showurl.label}</Nav.Link>
+                
+            })
+            }
+            
+        </Nav>
         </Col>
       </Row>
       <Row>

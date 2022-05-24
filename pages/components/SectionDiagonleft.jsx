@@ -6,11 +6,11 @@ export default function SectionDiagonleft({ sectionContent }){
   const divStyle = {
   color: 'blue',
   backgroundImage: 'url(' + sectionContent.img + ') ',
-    backgroundColor: 'red',
+  backgroundColor: 'red',
   backgroundRepeat:"no-repeat",
   backgroundPosition: "center",
-    backgroundSize: "cover",
-  clipPath: `polygon(0 0, 74% 0, 100% 100%, 0% 100%)`,
+  backgroundSize: "cover",
+  clipPath: `polygon(0 0, 74% 0, 100% 100%, 0% 100%)`
 };
   return(
     <>
