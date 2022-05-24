@@ -115,7 +115,7 @@ export default function Home() {
           btncolor:"btn-warning",
           btntext:"Who more",
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor,`,
-          image:"https://mbatime4u.com/wp-content/uploads/2020/01/3.jpgg"
+          img:"https://mbatime4u.com/wp-content/uploads/2020/01/3.jpg"
         }
       }
       />
@@ -150,7 +150,7 @@ export default function Home() {
           btncolor:"btn-warning",
           btntext:"Why more",
           description:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor. `,
-          image:"https://yenna.org/wp-content/uploads/2020/09/whoarewe-05-1-1024x677.jpg"      
+          img:"https://goldwaterlawfirm.com/wp-content/uploads/2019/05/How-an-Essure-Lawyer-Can-Help-You-e1471365588763.jpg"      
       }
       } 
       />
