@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
 import TopNavbar from '../components/TopNavbar'
 import Footer from  '../components/Footer'
 
@@ -10,7 +7,7 @@ import { Button, Offcanvas, Container, Row, Col } from 'react-bootstrap';
 
 import Menuleft from './Menuleft'
 
-export default function index(){
+export default function Layout(){
 
   const [show, setShow] = useState(false);
 
@@ -39,52 +36,58 @@ export default function index(){
                      <Row>
                        <Col>
                          <p className="h1 pt-5">
-                           <img src="http://i.ytimg.com/vi/Fnw3lNeH-XI/mqdefault.jpg" className="mx-auto" alt="nextLogo" />
+                            <img src="http://i.ytimg.com/vi/Fnw3lNeH-XI/mqdefault.jpg" className="mx-auto" alt="nextLogo" />
                          </p>
                          <hr />
                          <div className="card">
                            <div className="card-body">
-                             <p className="card-title h3">Getting Started</p>
+                             <p className="card-title h3">Layout</p>
                              
                             <p className="text-dark h5">
-                              This template isMade  using NextJS and Bootstrap 5.1 an React-Bootstrap.</p>
+                             Layouts são pré-definidos agilizndo assim o desenvolvimento do conteúdo das páginas</p>
                              <p className="">
-                               I'm building a system that combines the ease and agility of these frameworks.
-Bringing more agility in the development of small projects
+                              Cada componente trabalha de forma independente , bastando somente alterar o conteúdo, como textos e imagens.
                              </p>
                              <p className="">
-                             Where each component works independently, just invoking the component in any place, where you have a key and a value in the default Javascript Object
+                             Agora se você quiser <strong>Editar</strong> os arquivos eles podem ser feitos facilmente, pois não existe alteração nos arquivos do BOOTSTRAP , e Css  (modules e global), ou seja esse projeto trabalha de forma nativa 
                              </p>
-                             <p>First of All</p>
-                              <div className="card">
-                                <div class="card-header">Code</div>
-                                <div className="card-body">
-                                   <pre>
-                                 <code>
-                                   <p>import Component from &#39;../components/Component&#39;</p>
-                                 </code>
-                               </pre>
-                                </div>
-                              </div>
-                             <hr />
-                             Second
-                              <div className="card">
-                                <div class="card-header">Code</div>
-                                <div className="card-body">
-                                   <pre>
-                                 <code>
-                              content= &#123;<br/> &#123;<br />
+                             {
+                               //Card codigos 
+                             }
+                             <div className="card">
+                               
+                               <div className="card-body">
+                                 <p className="card-title h3">
+                               SectionLeft</p>
+                                   <code>
+                                     <p>&nbsp;&lt;SectionLeft sectionContent= &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp;  &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; section:&quot;about&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bgcolor:&quot;bg-white&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; title:&quot;About Us&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colortitle:&quot;text-dark&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; borderbottom: &quot;border-mutted&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; subtitle:&quot;About We&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colorsubtitle:&quot;text-primary&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textcolor:&quot;text-dark&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btncolor:&quot;btn-success&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btntext:&quot;About US&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in accumsan nisl. In ante quam, auctor quis tincidunt in, congue eget tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nisi vitae lectus mollis hendrerit. Aenean euismod auctor vestibulum.`,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image:&quot;https://miro.medium.com/max/800/1*rF4Eig5mJBaX5zi9LGl1fw.jpeg&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp;  &#125;<br />
+&nbsp; &nbsp; &nbsp;  &#125;<br />
+&nbsp; &nbsp; &nbsp; /&gt;</p>
 
-                                object:&quot;value&quot;<br />
-                                 &#125;<br />&#125;
-                                 </code>
-                               </pre>
-                                </div>
-                              </div>
-                             <p className="">
-                               Where all content can be dynamically changed, without the need to change components, as all attributes such as colors, images are dynamically loaded in the front end
-                             </p>
-                            
+                                   </code>
+                              
+                               </div>
+                             </div>
+
+                             {
+                               //Final card códigos
+                             }
+                             <p> </p>
                            </div>
                          </div>
                        </Col>

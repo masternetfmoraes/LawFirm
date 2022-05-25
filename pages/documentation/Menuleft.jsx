@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Button, Offcanvas, Container, Row, Col,
        ListGroup } from 'react-bootstrap';
 
@@ -7,16 +8,12 @@ export default function Menuleft(){
     title: "DashBoard",
     items:[
       {
-        label: "Home",
-        itemhref: "https:#"
-      },
-      {
         label: "Getting Started",
-        itemhref: "https:#"
+        itemhref: "/documentation/"
       },
       {
         label: "Layout",
-        itemhref: "https:#"
+        itemhref: "/documentation/layout"
       },
       {
         label: "Buttons",
@@ -46,7 +43,7 @@ export default function Menuleft(){
         {
           itemMenu.items.map((item,label,itemhref)=>{
             return<ListGroup.Item action variant="dark">
-              { item.label }
+              <Link href={ item.itemhref } passHref><a>{ item.label }</a></Link>
             </ListGroup.Item>
           })
         }
