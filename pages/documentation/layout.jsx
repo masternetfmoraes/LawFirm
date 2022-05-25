@@ -13,7 +13,6 @@ export default function Layout(){
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   
   return(
      <>
@@ -87,7 +86,50 @@ export default function Layout(){
                              {
                                //Final card códigos
                              }
-                             <p> </p>
+                             <p className=""><strong>section</strong> é a section do HTML para poder agrupar conteúdo</p>
+                             <p className=""><strong>bgcolor</strong> Serve para alterar  cor de fundo do componente, lembre-se estamos usando os padrões do bootstrap para cores  e estilos</p>
+                              <div className="card">
+                                <div className="card-body">
+                                  <div class="container">
+                                  <div className="row gap-1 mx-auto ">
+                                    <div className="col-sm-3 p-2 bg-primary">
+                                    <span className="text-white">bg-primary</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-secondary">
+                                    <span className="text-white">bg-secondary</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-success">
+                                    <span className="text-white">bg-success</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-danger">
+                                    <span className="text-white">bg-danger</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-warning">
+                                    <span className="text-white">bg-warning</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-info">
+                                    <span className="text-white">bg-info</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-light">
+                                    <span className="text-dark">bg-light</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-dark">
+                                    <span className="text-white">bg-dark</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-body">
+                                    <span className="text-dark">bg-body</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-white">
+                                    <span className="text-dark">bg-white</span>
+                                    </div>
+                                    <div className="col-sm-3 p-2 bg-transparent">
+                                    <span className="text-dark">bg-transparent</span>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                             <p className="mt-5"><strong>title</strong> onde está o titulo do componente , ou seja onde vai mostrar do que se trata a section</p>
                            </div>
                          </div>
                        </Col>
