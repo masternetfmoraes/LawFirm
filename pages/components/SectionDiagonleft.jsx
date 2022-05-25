@@ -17,10 +17,10 @@ export default function SectionDiagonleft({ sectionContent }){
      <section id={sectionContent.section}>
       <Container fluid className={`${sectionContent.bgcolor} ${sectionContent.textcolor}`}>
         <Row> 
-           <Col sm={8} style={divStyle} className={`px-5 d-sm-none d-md-block d-none d-sm-block `}>
+           <Col sm={6} style={divStyle} className={`px-5 d-sm-none d-md-block d-none d-sm-block `}>
          
         </Col>
-          <Col sm={4} className="py-5 px-5">
+          <Col sm={6} className="py-5 px-5">
             <p className={`h5 ${sectionContent.colorsubtitle } mb-0 mt-5`}>{sectionContent.subtitle}</p>
             <p className={`${sectionContent.colortitle} display-4 mb-3 border-bottom ${sectionContent.borderbottom} `}>{sectionContent.title}</p>
             

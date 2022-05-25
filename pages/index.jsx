@@ -54,6 +54,10 @@ export default function Home() {
           {
             label:"History",
             url :"https://www.history.com"
+          },
+           {
+            label:"Documentation",
+            url :"/documentation"
           }
         ]
         

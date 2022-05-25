@@ -11,7 +11,7 @@ export default function Carrossel({carouselContent}){
           return <Carousel.Item>
               <img src={item.img}
       className="d-block w-100"
-      alt="image 01"
+      alt="imagecarousel"
     /><Carousel.Caption>
                 <h3>{item.title}</h3>
                 <p>{item.subtitle}</p>
