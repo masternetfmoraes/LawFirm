@@ -3,7 +3,8 @@ import TopNavbar from '../components/TopNavbar'
 import Footer from  '../components/Footer'
 
 import { useState } from 'react'
-import { Button, Offcanvas, Container, Row, Col } from 'react-bootstrap';
+import { Button, Offcanvas, Container, Row, Col, 
+       Breadcrumb } from 'react-bootstrap';
 
 import Menuleft from './Menuleft'
 
@@ -38,17 +39,23 @@ export default function Layout(){
                             <img src="http://i.ytimg.com/vi/Fnw3lNeH-XI/mqdefault.jpg" className="mx-auto" alt="nextLogo" />
                          </p>
                          <hr />
+                         <Breadcrumb>
+  <Breadcrumb.Item href="/documentation">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/documentation/layout">
+    Layout
+  </Breadcrumb.Item>
+</Breadcrumb>
                          <div className="card">
                            <div className="card-body">
                              <p className="card-title h3">Layout</p>
                              
                             <p className="text-dark h5">
-                             Layouts são pré-definidos agilizndo assim o desenvolvimento do conteúdo das páginas</p>
+                            Layouts are predefined thus speeding up the development of page content</p>
                              <p className="">
-                              Cada componente trabalha de forma independente , bastando somente alterar o conteúdo, como textos e imagens.
-                             </p>
-                             <p className="">
-                             Agora se você quiser <strong>Editar</strong> os arquivos eles podem ser feitos facilmente, pois não existe alteração nos arquivos do BOOTSTRAP , e Css  (modules e global), ou seja esse projeto trabalha de forma nativa 
+                             Each component works independently, just changing the content, such as texts and images.
+
+Now if you want to Edit the files they can be done easily, because there is no change in the BOOTSTRAP files, and Css (modules and global), that is, this project works natively
+                        
                              </p>
                              {
                                //Card codigos 
@@ -65,7 +72,7 @@ export default function Layout(){
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bgcolor:&quot;bg-white&quot;,<br />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; title:&quot;About Us&quot;,<br />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colortitle:&quot;text-dark&quot;,<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; borderbottom: &quot;border-mutted&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; borderbottom: &quot;border-dark&quot;,<br />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; subtitle:&quot;About We&quot;,<br />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colorsubtitle:&quot;text-primary&quot;,<br />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textcolor:&quot;text-dark&quot;,<br />
@@ -86,8 +93,8 @@ export default function Layout(){
                              {
                                //Final card códigos
                              }
-                             <p className=""><strong>section</strong> é a section do HTML para poder agrupar conteúdo</p>
-                             <p className=""><strong>bgcolor</strong> Serve para alterar  cor de fundo do componente, lembre-se estamos usando os padrões do bootstrap para cores  e estilos</p>
+                             <p className=""><strong>1 . section</strong> is the section of the HTML to be able to group content</p>
+                             <p className=""><strong>2 . bgcolor</strong> It is used to change the component's background color, remember we are using bootstrap's defaults for colors and styles</p>
                               <div className="card">
                                 <div className="card-body">
                                   <div class="container">
@@ -129,7 +136,101 @@ export default function Layout(){
                                   </div>
                                 </div>
                               </div>
-                             <p className="mt-5"><strong>title</strong> onde está o titulo do componente , ou seja onde vai mostrar do que se trata a section</p>
+                             <p className="mt-5"><strong>3 . title</strong> where will be the title of the component, that is, where will show what the section is about</p>
+                             <p className="mt-5">
+                               <strong>4 . colortitle</strong> set the section title color
+                             </p>
+                             {
+                               //card text-color
+                             }
+                             <div className="card">
+                               <div className="card-body">
+                                 <p className="text-primary">
+                                   text-primary
+                                 </p>
+                                  <p className="text-secondary">
+                                   text-secondary
+                                 </p>
+                                  <p className="text-success">
+                                   text-success
+                                 </p>
+                                  <p className="text-danger">
+                                   text-danger
+                                 </p>
+                                  <p className="text-warning">
+                                   text-warning
+                                 </p>
+                                  <p className="text-body">
+                                   text-body
+                                 </p>
+                                  <p className="text-muted">
+                                   text-muted
+                                 </p>
+                                  <p className="text-white bg-dark">
+                                   text-white
+                                 </p>
+                                  <p className="text-black-50">
+                                   text-black-50
+                                 </p>
+                                 <p className="text-white-50 bg-dark">
+                                   text-white-50
+                                 </p>
+                               </div>
+                             </div>
+                             {
+                               //final text-color
+                             }
+                             <p className="mt-3">
+                             <strong>5 . borderbottom</strong> Line below the Title Follows the Bootstrap colors</p>
+                             {
+                               //border color
+                             }
+                             <div className="card">
+                               <div className="card-body">
+                                 <p className="border border-primary border-top-0 border-start-0 border-end-0">border-primary</p>
+                                 <p className="border border-secondary border-top-0 border-start-0 border-end-0">border-secondary</p>
+                                 <p className="border border-success border-top-0 border-start-0 border-end-0">border-success</p>
+                                 <p className="border border-danger border-top-0 border-start-0 border-end-0">border-danger</p>
+                                 <p className="border border-warning border-top-0 border-start-0 border-end-0">border-warning</p>
+                                 <p className="border border-info border-top-0 border-start-0 border-end-0">border-info</p>
+                                 <p className="border border-light border-top-0 border-start-0 border-end-0">border-light</p>
+                                 <p className="border border-dark border-top-0 border-start-0 border-end-0">border-dark</p>
+                                 <p className="border border-white border-top-0 border-start-0 border-end-0">border-white</p>
+                               </div>
+                             </div>
+                             {
+                               //final  border color
+                             }
+                             <p className="mt-3">
+                               <strong>6 . subtitle</strong> Insert the subtitle of the section just below the title
+                             </p>
+                             <p className="mt-3">
+                               <strong>7 . colorsubtitle</strong> Inserts the subtitle color. (follows bootstrap text color standards)
+                             </p>
+                             <p className="mt-3">
+                               <strong>8 . textcolor</strong> Color of all section text except title and subtitle colors
+                             </p>
+                             <p className="mt-3">
+                               <strong>9 . btntext</strong> Sections button text
+                             </p>
+                             <p className="mt-3">
+                               <strong>10 . description</strong> Section text where all the text that describes the section goes
+                             </p>
+                             <p className="mt-3">
+                               <strong>11 . image</strong> Where the images of each section are inserted.
+                             </p>
+                             <ul>
+                               <li>11 a. The images can be on the right or on the left by simply selecting the corresponding component See <Link href="/sections">
+    <a>this page!</a>
+  </Link>
+                                 <ul>
+                                   <li>sectionLeft</li>
+                                   <li>sectionRight</li>
+                                   <li>sectionDiagonleft</li>
+                                   <li>sectionDiagonRight</li>
+                               </ul></li>
+                             </ul>
+                             
                            </div>
                          </div>
                        </Col>
