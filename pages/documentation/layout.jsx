@@ -41,7 +41,7 @@ export default function Layout(){
                          <hr />
                          <Breadcrumb>
   <Breadcrumb.Item href="/documentation">Home</Breadcrumb.Item>
-  <Breadcrumb.Item href="/documentation/layout">
+  <Breadcrumb.Item active>
     Layout
   </Breadcrumb.Item>
 </Breadcrumb>
@@ -220,7 +220,7 @@ Now if you want to Edit the files they can be done easily, because there is no c
                                <strong>11 . image</strong> Where the images of each section are inserted.
                              </p>
                              <ul>
-                               <li>11 a. The images can be on the right or on the left by simply selecting the corresponding component See <Link href="/sections">
+                               <li>11 a. The images can be on the right or on the left by simply selecting the corresponding component See <Link href="/documentation/sections">
     <a>this page!</a>
   </Link>
                                  <ul>

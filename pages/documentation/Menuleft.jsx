@@ -16,17 +16,9 @@ export default function Menuleft(){
         itemhref: "/documentation/layout"
       },
       {
-        label: "Buttons",
-        itemhref: "https:#"
-      },
-      {
-        label: "Carousel",
-        itemhref: "https:#"
-      },
-      {
-        label: "NavBar",
-        itemhref: "https:#"
-      },
+        label: "Sections",
+        itemhref: "/documentation/sections"
+      }
       
     ]
     
