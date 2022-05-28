@@ -77,10 +77,7 @@ export default function Footer({sectionContent}){
       <Row>
         <Col>
           <hr />
-          <p className="text-center">Fabiano Moraes 2022®</p>
-          <FontAwesomeIcon className={styles.ico} icon={faClose}  />
-
-          
+          <p className="text-center">Fabiano Moraes 2022®</p>         
         </Col>
       </Row>
     </Container>

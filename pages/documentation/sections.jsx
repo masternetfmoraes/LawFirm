@@ -12,6 +12,8 @@ import SectionLeft from './../components/SectionLeft'
 import SectionRight from './../components/SectionRight'
 import SectionDiagonleft from './../components/SectionDiagonleft'
 import SectionDiagonright from './../components/SectionDiagonright'
+import Team from './../components/Team'
+
 
 export default function Sections(){
 
@@ -58,6 +60,112 @@ export default function Sections(){
                             The sections are assembled with a view to agility, it is only necessary to change the contents</p>
                              </div>
                             </div>
+                         <section id="sectiontopnavbar" >
+                           {
+                           //card TopNavbar
+                         }
+                         <div className="card mt-5">
+                           <div className="card-body">
+                             <p className="h5">TopNavbar</p>
+                             <div className="">
+                            <TopNavbar navbarContent={
+      {
+        bg:"light",
+        variant:"light",
+        brandname:"Brand Here",
+        items: [
+          {
+            label:"Home",
+            url :"https://www.fabianomoraes.net"
+          },
+          {
+            label:"Link-1",
+            url :"#"
+          }
+        ]
+        
+      }
+      } dropdown={
+        {
+        title:"Drop Down",
+        id:"iddropdown",
+      item:[
+          {
+        itemlabel:"item 01",
+        itemhref:"#01"
+      },{
+        itemlabel:"item 02",
+        itemhref:"#02",   
+      },
+        {
+        itemlabel:"item 03",
+        itemhref:"#03",   
+      }
+        ]
+      }
+      } />
+                             </div>
+                             <br />
+                             <code>
+                              <p>&lt;TopNavbar navbarContent=&#123;<br />
+&nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; bg:&quot;light&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; variant:&quot;light&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; brandname:&quot;LawFirm&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; items: [<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;Home&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.fabianomoraes.net&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;About&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;#about&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;Who we Are&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.google.com&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;History&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.history.com&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;Documentation&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;/documentation&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ]<br />
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &#125; dropdown=&#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; title:&quot;Menu Drop Down&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; id:&quot;iddropdown&quot;,<br />
+&nbsp; &nbsp; &nbsp; item:[<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemlabel:&quot;item 01&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemhref:&quot;#01&quot;<br />
+&nbsp; &nbsp; &nbsp; &#125;,&#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemlabel:&quot;item 02&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemhref:&quot;#02&quot;, &nbsp;&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemlabel:&quot;item 03&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemhref:&quot;#03&quot;, &nbsp;&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ]<br />
+&nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &#125; /&gt;</p>
+
+                             </code>
+                           </div>
+                         </div>
+                         {
+                           //final card sections TopNavbar
+                         }
+                         </section>
+
+
+                         
                          <section id="sectionLeft" >
                            {
                            //card sectionleft
@@ -272,6 +380,196 @@ export default function Sections(){
                            //final card diagonLeft
                          }
                          </section>
+                         <section id="sectionteam" >
+                           {
+                           //card team
+                         }
+                         <div className="card mt-5">
+                           <div className="card-body">
+                             <p className="h5">Team</p>
+                             <div className="">
+                               <Team teamContent={
+      {
+        sectionid:"team",
+        bgcolor:"bg-dark",
+        textcolor:"text-white",
+        title:"Team Member",
+        colortitle:"text-warning",
+        text:"We believe that as a boutique practice, we are better placed to respond quickly to our clients needs and to provide bespoke service to our clients. We pride ourselves on not just being our clients lawyers.",
+        items:[
+          {
+            img:"https://i.pinimg.com/736x/df/03/be/df03bed16a9c7ee0af654268734e877c.jpg",
+            name:"John Doe",
+            occupation:"C.E.O"
+          },
+          {
+            img:"https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f5b24404-14da-4b82-8a25-6de95d2b991b/guests/c/c936bcb7-48f3-48ec-a4e4-759b7e6bc6dd/avatar_small.jpg?v=0",
+            name:"Mary Jane",
+            occupation:"Lawyer"
+          }
+        ]
+      }
+      } />
+                             </div>
+                             <br />
+                             <code>
+                              <p>&lt;Team teamContent=&#123;<br />
+&nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; sectionid:&quot;team&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; bgcolor:&quot;bg-dark&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; textcolor:&quot;text-white&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; title:&quot;Team Member&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; colortitle:&quot;text-warning&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; text:&quot;We believe that as a boutique practice, we are better placed to respond quickly to our clients needs and to provide bespoke service to our clients. We pride ourselves on not just being our clients lawyers.&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; items:[<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; img:&quot;https://i.pinimg.com/736x/df/03/be/df03bed16a9c7ee0af654268734e877c.jpg&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name:&quot;John Doe&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; occupation:&quot;C.E.O&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; img:&quot;http://irtsurveys.co.uk/wp-content/uploads/2014/09/team3-300x300.jpg&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name:&quot;Petter Park&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; occupation:&quot;Web Design&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; img:&quot;https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f5b24404-14da-4b82-8a25-6de95d2b991b/guests/c/c936bcb7-48f3-48ec-a4e4-759b7e6bc6dd/avatar_small.jpg?v=0&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name:&quot;Mary Jane&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; occupation:&quot;Lawyer&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ]<br />
+&nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &#125; /&gt;</p>
+
+                             </code>
+                           </div>
+                         </div>
+                         {
+                           //final card team
+                         }
+                         </section>
+
+
+                          <section id="sectionfooter" >
+                           {
+                           //card footer
+                         }
+                         <div className="card mt-5">
+                           <div className="card-body">
+                             <p className="h5">Footer</p>
+                             <div className="">
+                            <Footer sectionContent={
+      {
+        section:"footer",
+        bgcolor:"bg-dark",
+        textcolor:"text-white",
+        titlefooter:"FooterSection",
+        subtitlebrand:"Lorem subtitle ipsum",
+        titlenavcontact:"Contact US",
+        urls: "https://www.google.com",
+        titleurl: "google",
+        itemsnavcontact: [
+          {
+            label:"Fabiano Moraes",
+            url :"https://www.fabianomoraes.net"
+          },
+          {
+            label:"Google",
+            url :"https://www.google.com"
+          },
+          {
+            label: "Products",
+            url: "/produtos"
+          },
+          {
+            label: "contact@lawfirm.com",
+            url: "mailto:contact@lawfirm.com"
+          }
+        ],
+        titleservices:"Our Services",
+        itemsnavservices: [
+          {
+            label:"CORPORATE & SECURITIES",
+            url :"https://www.fabianomoraes.net"
+          },
+          {
+            label:"REAL ESTATE LAW",
+            url :"https://www.google.com"
+          },
+          {
+            label: "INSURANCE LAW",
+            url: "/produtos"
+          },
+          {
+            label: "Family",
+            url: "mailto:contact@lawfirm.com"
+          }
+        ],
+      }
+      } />
+                             </div>
+                             <br />
+                             <code>
+                              <p>&lt;Footer sectionContent=&#123;<br />
+&nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; section:&quot;footer&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; bgcolor:&quot;bg-dark&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; textcolor:&quot;text-white&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; titlefooter:&quot;LawFirm&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; subtitlebrand:&quot;Lorem subtitle ipsum&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; titlenavcontact:&quot;Contact US&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; urls: &quot;https://www.google.com&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; titleurl: &quot;google&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemsnavcontact: [<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;Fabiano Moraes&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.fabianomoraes.net&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;Google&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.google.com&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label: &quot;Products&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url: &quot;/produtos&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label: &quot;contact@lawfirm.com&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url: &quot;mailto:contact@lawfirm.com&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ],<br />
+&nbsp; &nbsp; &nbsp; &nbsp; titleservices:&quot;Our Services&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; itemsnavservices: [<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;CORPORATE &amp; SECURITIES&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.fabianomoraes.net&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label:&quot;REAL ESTATE LAW&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url :&quot;https://www.google.com&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label: &quot;INSURANCE LAW&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url: &quot;/produtos&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#123;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label: &quot;Family&quot;,<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; url: &quot;mailto:contact@lawfirm.com&quot;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ],<br />
+&nbsp; &nbsp; &nbsp; &#125;<br />
+&nbsp; &nbsp; &nbsp; &#125; /&gt;</p>
+
+<p>&nbsp;</p>
+
+                             </code>
+                           </div>
+                         </div>
+                         {
+                           //final card footer
+                         }
+                         </section>
+                         
                        </Col>
                      </Row>
                    </Container>
