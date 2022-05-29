@@ -5,7 +5,7 @@ export default function Carrossel({carouselContent}){
   return(
     <>
       <section id={carouselContent.sectionid}>
-    <Carousel>
+    <Carousel fade>
       {
         carouselContent.carouselitem.map((item,img,title,subtitle)=>{
           return <Carousel.Item>

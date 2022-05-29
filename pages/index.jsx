@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import TopNavbar from './components/TopNavbar';
 import Carrossel from './components/Carrossel'
 import Team from './components/Team'
+import Price from './components/Price'
 import Footer from './components/Footer'
 
 import SectionDiagonleft from './components/SectionDiagonleft'
@@ -185,6 +186,64 @@ export default function Home() {
         ]
       }
       } />  
+      <Price priceContent={
+      {
+        section:"price",
+        bgsectioncolor:"bg-white",
+        titlesection:"Price",
+        titlesectioncolor:"text-dark",
+        cardprice:[
+          {
+            bgcolorcard:"bg-warning",
+            textcolorcard:"text-danger",
+            titlecard:"card",
+            subtitlecard:"Subtitle here",
+            coincard:"Brl",
+            pricecard:"101,50",
+            listcard:[
+              {
+                labellist:"Family Law"
+              },
+              {
+                labellist:"Immigration Family Law"
+              },
+              {
+                labellist:"Total Garantee"
+              }
+            ]
+          },
+           {
+            bgcolorcard:"bg-success",
+            textcolorcard:"text-white",
+            titlecard:"50% Off",
+            subtitlecard:"Big Promotion",
+            coincard:"$",
+            pricecard:"9,99",
+            listcard:[
+              {
+                labellist:"Black Friday today"
+              },
+              {
+                labellist:"Firm law lawyers"
+              },
+              {
+                labellist:"Gropud"
+              }
+            ]
+          }
+        ],
+        linkprice:[
+          {
+            labelprice:"Read More",
+            pricehref:"card2"
+          },
+          {
+            labelprice:"Buy",
+            pricehref:"card2-a"
+          }
+        ]
+      }
+      }/>
       <SectionRight sectionContent={
         {
           section:"right",
