@@ -189,61 +189,111 @@ export default function Home() {
       <Price priceContent={
       {
         section:"price",
-        bgsectioncolor:"bg-white",
+        "bgsectioncolor":"bg-white",
         titlesection:"Price",
         titlesectioncolor:"text-dark",
         cardprice:[
+          //cardprice start
+          
+          {
+            bgcolorcard:"bg-dark",
+            textcolorcard:"text-white",
+            titlecard:"Family Law",
+            subtitlecard:"Subtitle here",
+            coincard:"usd",
+            pricecard:"1,25",
+            priceitems:[
+              {
+                itemlabel:"Family law ordenance"
+              },
+              {
+                itemlabel:"Creative Design"
+              },
+              {
+                itemlabel:"03 Mockups Month"
+              }
+            ],
+           linkurl: [
+              {
+                label:"See this",
+                url:"See"
+              }
+            ]
+          },
+          //card price end
+          //card price start
+          {
+            bgcolorcard:"bg-danger",
+            textcolorcard:"text-white",
+            titlecard:"Child Law",
+            subtitlecard:"Subtitle here",
+            coincard:"usd",
+            pricecard:",35",
+            priceitems:[
+              {
+                itemlabel:"Intuitive Texts"
+              },
+              {
+                itemlabel:"Creation List"
+              },
+              {
+                itemlabel:"Creative Design"
+              }
+            ],
+            linkurl: [
+              {
+                label:"Documentation",
+                url:"Docu"
+              },
+              {
+                label:"Buy",
+                url:"Docu2"
+              }
+            ]
+          },
+          //card price end
+          //card price start
           {
             bgcolorcard:"bg-warning",
-            textcolorcard:"text-danger",
-            titlecard:"card",
-            subtitlecard:"Subtitle here",
-            coincard:"Brl",
-            pricecard:"101,50",
-            listcard:[
-              {
-                labellist:"Family Law"
-              },
-              {
-                labellist:"Immigration Family Law"
-              },
-              {
-                labellist:"Total Garantee"
-              }
-            ]
-          },
-           {
-            bgcolorcard:"bg-success",
             textcolorcard:"text-white",
-            titlecard:"50% Off",
-            subtitlecard:"Big Promotion",
-            coincard:"$",
-            pricecard:"9,99",
-            listcard:[
+            titlecard:"International Law",
+            subtitlecard:"Subtitle here",
+            coincard:"usd",
+            pricecard:"30,05",
+            priceitems:[
               {
-                labellist:"Black Friday today"
+                itemlabel:"Surrogacy"
               },
               {
-                labellist:"Firm law lawyers"
+                itemlabel:"Adoption Services"
               },
               {
-                labellist:"Gropud"
+                itemlabel: "Special Guardianship Order"
+              },
+              {
+                itemlabel:"Care Proceedings"
+              }
+            ],
+            linkurl: [
+              {
+                label:"See More",
+                url:"see"
+              },
+              {
+                label:"Documentation",
+                url:"docu"
+              },
+              {
+                label:"Buy",
+                url:"buy"
               }
             ]
           }
-        ],
-        linkprice:[
-          {
-            labelprice:"Read More",
-            pricehref:"card2"
-          },
-          {
-            labelprice:"Buy",
-            pricehref:"card2-a"
-          }
-        ]
+          //cardprice end
+          ]
+        
       }
-      }/>
+      } />
       <SectionRight sectionContent={
         {
           section:"right",

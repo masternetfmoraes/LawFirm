@@ -16,7 +16,7 @@ export default function Price({priceContent}){
           {
             priceContent.cardprice.map((item, bgcolorcard, textcolorcard, titlecard,listcard, linkprice )=>{
               return <>
-                <Col>
+                <Col sm>
             <Card className={`${item.bgcolorcard} ${item.textcolorcard} shadow-sm`}>
               <Card.Body>
                 <Card.Title><p className="text-center h2">
@@ -31,20 +31,25 @@ export default function Price({priceContent}){
                 <Card.Text className="">
                 
                   <ul className="list-unstyled">
-                     {item.listcard.map((item,labellist)=>{
-                return <>
-                  <li className="d-flex justify-content-around">{ item.labellist }</li>
-                </>
-                  })}
+                    {
+                   // item.priceitems.length
+                      item.priceitems.map((valor, itemlabel)=>{
+                        return <>
+                        <li className="d-flex justify-content-start h5 px-5 mt-1 ">{ valor.itemlabel }</li>
+                        </>
+                      })
+                    }
                     
-                    </ul>
+                  </ul>
+                  
                 </Card.Text>
+                <hr />
                 <div className="d-flex justify-content-around">
                   {
-                    priceContent.linkprice.map((item,labelprice,pricehref)=>{
-                      return <>
-                        <Card.Link href={ item.pricehref } >{ item.labelprice } </Card.Link>
-                      </>
+                    item.linkurl.map((valor, item)=>{
+                      return <><Card.Link href={valor.url}>
+                    { valor.label } </Card.Link>
+                        </>
                     })
                   }
                 </div>
