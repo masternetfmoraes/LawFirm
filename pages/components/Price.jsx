@@ -17,7 +17,7 @@ export default function Price({priceContent}){
             priceContent.cardprice.map((item, bgcolorcard, textcolorcard, titlecard,listcard, linkprice )=>{
               return <>
                 <Col sm>
-            <Card className={`${item.bgcolorcard} ${item.textcolorcard} shadow-sm`}>
+            <Card className={`${item.bgcolorcard} ${item.textcolorcard} shadow-sm mt-2`}>
               <Card.Body>
                 <Card.Title><p className="text-center h2">
                   {item.titlecard}</p></Card.Title>

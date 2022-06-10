@@ -6,6 +6,7 @@ import TopNavbar from './components/TopNavbar';
 import Carrossel from './components/Carrossel'
 import Team from './components/Team'
 import Price from './components/Price'
+import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 
 import SectionDiagonleft from './components/SectionDiagonleft'
@@ -18,7 +19,7 @@ import SectionRight from './components/SectionRight'
 
 export default function Home() {
   return (
-    <>
+    <> 
       <Head>
         <title> Law Firm</title>
         <
@@ -294,6 +295,8 @@ export default function Home() {
         
       }
       } />
+
+      <Testimonials />
       <SectionRight sectionContent={
         {
           section:"right",
