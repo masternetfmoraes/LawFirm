@@ -12,6 +12,10 @@ export default function Menuleft(){
         itemhref: "/documentation/"
       },
       {
+        label: "Carousel",
+        itemhref: "/documentation/carousel  "
+      },
+      {
         label: "Layout",
         itemhref: "/documentation/layout"
       },
