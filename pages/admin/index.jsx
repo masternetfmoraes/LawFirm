@@ -1,6 +1,11 @@
 import { Container,Row,Col,Button } from 'react-bootstrap';
 
 export default function index(){
+  const divStyle = {
+  color: 'white',
+  fontSize: "45px",
+  backgroundColor: 'black',
+};
   return(<>
     <Container fluid>
       <Row>
@@ -13,10 +18,12 @@ export default function index(){
             <li className="list-group-item">A fourth item</li>
             <li className="list-group-item">And a fifth one</li>
           </ul>
+
+          
         </Col>
         <Col sm={10}>
         Conteudo</Col>
       </Row>
-    </Container>
+    </Container><div style={divStyle}>Footer</div>
   </>);
 }
