@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Team({teamContent}) {
+
 	return (
 		<>
 			<section id={teamContent.sectionid}>
